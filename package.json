@@ -10,7 +10,16 @@
   "license": "ISC",
 
   "jest": {
-    "collectCoverage": true
+    "collectCoverage": true,
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
   },
 
   "devDependencies": {
